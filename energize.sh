@@ -1,1 +1,5 @@
+#!/bin/sh
+
+#SBATCH --mem-per-cpu=100M -t00:01:00
+
 echo "$SLURM_ARRAY_TASK_ID $RANDOM" >> $SLURM_ARRAY_JOB_ID.$SLURM_ARRAY_TASK_ID.nrg
